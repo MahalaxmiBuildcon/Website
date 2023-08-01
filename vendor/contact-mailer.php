@@ -11,7 +11,7 @@ if($_POST)
 
     $mail = new PHPMailer();
 
-    $your_email = "youremail@website.com";
+    $your_email = "mahalaxmibuildcon@hotmail.com";
 
 
     //check if its an ajax request, exit if not
@@ -266,18 +266,18 @@ if($_POST)
 
 
 
-    //Server settings
-//    $mail->isSMTP();                                            // Send using SMTP
-//    $mail->Host       = 'smtp.googlemail.com';                    // Set the SMTP server to send through
-//    $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-//    $mail->Username   = 'website@gmail.com';                     // SMTP username
-//    $mail->Password   = 'your password';                         // SMTP password
+    // Server settings
+   $mail->isSMTP();                                            // Send using SMTP
+   $mail->Host       = 'smtp.live.com';                    // Set the SMTP server to send through
+   $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
+   $mail->Username   = 'mahalaxmibuildcon@hotmail.com';                     // SMTP username
+   $mail->Password   = 'Dhoka@501';                         // SMTP password
 //    $mail->SMTPSecure = 'TLS';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
-//    $mail->Port       = 587;                                    // TCP port to connect to
+   $mail->Port       = 25;                                    // TCP port to connect to
 
     //Recipients
     $mail->setFrom($user_Email,$user_Name);
-    $mail->addAddress($your_email, 'Theme Industry');     // Add a recipient
+    $mail->addAddress($your_email, 'Enquiry from Website');     // Add a recipient
     $mail->addReplyTo($your_email, 'Information');
 
 
